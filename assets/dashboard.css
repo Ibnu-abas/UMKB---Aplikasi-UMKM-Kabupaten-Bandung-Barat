@@ -1,0 +1,219 @@
+body {
+  font-size: .875rem;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  /* rtl:raw:
+  right: 0;
+  */
+  bottom: 0;
+  /* rtl:remove */
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #727272;
+}
+
+.sidebar .nav-link.active {
+  color: #2470dc;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+
+.nav-item a {
+  transition: color 0.3s, color 0.3s;
+}
+
+.nav-item a:hover {
+  color: #007BFF; 
+
+}
+/* ###################### selesai navbar ####################### */
+
+
+
+/* ################ kotak pendataan ################ */
+/* 
+ #dasbord .judul{
+  color: black;
+  margin-right: auto;
+  top: -20%;
+}  */
+
+ #dasbord .card-title{
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+} 
+
+#dasbord .hero-container{
+  display: flex;
+ 
+}
+
+
+ #dasbord .row{
+  padding: 30px;
+  background-color: #D9D9D9;
+  position: relative;
+  left: 28%;
+  border-radius: 5px;
+  margin-right: 20%;
+  height: 50;
+} 
+
+
+
+@media (max-width: 768px) {
+  #dasbord .row {
+      margin: 10px auto;
+      max-width: 400px; 
+      width: 90%;
+      text-align: center; 
+  }
+}
+
+@media (max-width: 768px) {
+  #dasbord .row {
+      max-width: 100%;
+      flex-direction: column; 
+      align-items: center;
+      
+  }
+}
+
+
+
+ /* CSS untuk layar besar (lebar lebih dari 768px) */
+ @media (min-width: 768px) {
+     .hero-container {
+         display: flex;
+         justify-content: space-between;
+     }
+     .col {
+         width: 20%;
+     }
+ }
+
+ /* CSS untuk layar kecil (lebar kurang dari 768px) */
+ @media (max-width: 768px) {
+     .hero-container {
+         flex-direction: column;
+         align-items: center;
+         margin-right: 57%;
+     }
+     .col {
+         width: 100%;
+         margin-bottom: 20px;
+     }
+ }
+
+ /* Gaya umum untuk kedua ukuran layar */
+ .card-title {
+     color: black;
+     font-weight: bold;
+ }
+
+ .umkm-count {
+     color: black;
+     font-weight: bold;
+     font-size: 18px;
+ }
+
+ .card-text {
+     color: black;
+     font-size: 15px;
+ }
+
+
+
+/* ############### selesai kotak pendataan ##################### */
+
+
+
+/* ######################## daftar umkm ########################## */
+
+.btn{
+  margin-right: 5px;
+}
+
+/* ######################## selesai daftar umkm ########################## */

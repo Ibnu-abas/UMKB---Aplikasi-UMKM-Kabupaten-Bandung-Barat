@@ -1,0 +1,22 @@
+# Environment & Secret configs
+install.lock
+*.bak
+*.log
+
+# Backup / Archive files
+*.zip
+*.tar.gz
+*.rar
+
+# Operating System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE & Editor configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+nbproject/
